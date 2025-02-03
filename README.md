@@ -17,45 +17,44 @@ Tan solo tenes que ingresar los nombres de los participantes y ya está*<br>
 ## 2. ¿Cómo funciona?
 
 Inicio
-![Pantalla inicial]()
+![Pantalla inicial](https://github.com/anaelisab/challengeamigosecreto.github.io/blob/main/assets/inicio.png?raw=true)
 
-Añadir nombre
-![Escribir nombre]()
+Al añadir el nombre, este debe ser válido:
+.No tiene que estar en blanco
+![Validez nombre blanco](https://github.com/anaelisab/challengeamigosecreto.github.io/blob/main/assets/alertaBlanco.png?raw=true)
 
-El nombre debe ser válido
-![Validez nombre]()
+.No estar repetido
+![Validez nombre repetido](https://github.com/anaelisab/challengeamigosecreto.github.io/blob/main/assets/alertaRepetido.png?raw=true)
 
 Tienes que añadir mínimo tres nombres para poder jugar
-![Tres mínimo]()
+![Tres mínimo](https://github.com/anaelisab/challengeamigosecreto.github.io/blob/main/assets/alertaMinimoTres.png?raw=true)
 
 Podras ver todos los nombres que has ingresado en una lista vertical:
-![Lista amigos]()
+![Lista amigos](https://github.com/anaelisab/challengeamigosecreto.github.io/blob/main/assets/listaNombre.png?raw=true)
 
-Podras eliminarlos en caso de haber algún error
-![Eliminar amigos]()
+Podrías eliminarlos en caso de haber algún error
+![Eliminar amigos](https://github.com/anaelisab/challengeamigosecreto.github.io/blob/main/assets/eliminarNombr.png?raw=true)
 
 Una vez todos los nombres del grupo estén en la lista, cada uno podrá tomar el dispositivo y averiguar su amigo secreto que será asignado de manera aleatoria.
 
-Al presionar el botón de "Sortear amigo", aparecerá una alerta indicandole al usuario que antes de pasar el dispositivo haga click sobre el nombre sorteado. Así, solo quien haya sorteado el amigo conocerá quien es su "Amigo Secreto"
-![Sortear amigo]()
+Al presionar el botón de "Sortear amigo", aparecerá una alerta indicandole al usuario que antes de pasar el dispositivo haga click sobre el nombre sorteado. Así, solo quien haya sorteado el amigo conocerá quién es su "Amigo Secreto"
+![Primer sortear amigo](https://github.com/anaelisab/challengeamigosecreto.github.io/blob/main/assets/alertaOcultarNombre.png?raw=true)
+![Siguientes sortear amigo](https://github.com/anaelisab/challengeamigosecreto.github.io/blob/main/assets/alertaOcultarNombre2.png?raw=true)
 
 Así verás en pantalla el amigo secreto que se le ha asignado a la persona que presionó el botón en esta ocasión.
-![Amigo Secreto aleatorio]()
+![Amigo Secreto aleatorio](https://github.com/anaelisab/challengeamigosecreto.github.io/blob/main/assets/nombreSorteado.png?raw=true)
 
 Una vez se hayan sorteado todos los nombres de la lista, el sistema informará de dicha situación y el juego habrá finalizado:
-![Alerta amigos sorteados]()
+![Alerta amigos sorteados](https://github.com/anaelisab/challengeamigosecreto.github.io/blob/main/assets/sorteoFinalizado.png?raw=true)
 
-Esta deberá ser la pantalla final:
-
-![Juego finalizado]()
+Luego reiniciará automáticamente.
 
 ## Acceso al proyecto
 
-Para utilizar la aplicación, solo es necesario descargar el repositorio completo y abrir el archivo llamado index.html en tu navegador web.
+Para utilizar la aplicación, solo es necesario ingresar a este link.
 
-![Open file]()
+![Open file](https://anaelisab.github.io/challengeamigosecreto.github.io/)
 
-Con un editor de texto podrás acceder a los archivos `JavaScript`, `HTML` y `CSS` donde se encuentra el código fuente.
 
 
 ## Tecnologías utilizadas
