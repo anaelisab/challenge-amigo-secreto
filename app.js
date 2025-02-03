@@ -83,7 +83,7 @@ function sortearAmigo() {
   resultado.textContent = `Tu amigo/a secreto/a es: ¡${amigoSecreto}!`;
 
   alert(
-    "¡Haz clic en el nombre sorteado antes de pasárselo a la siguiente persona!"
+    "¡Haz click en el nombre sorteado antes de pasárselo a la siguiente persona!"
   );
 
   // Esconder nombre al hacer click en el resultado
