@@ -19,11 +19,10 @@ Tan solo tenes que ingresar los nombres de los participantes y ya está*<br>
 Inicio
 ![Pantalla inicial](https://github.com/anaelisab/challengeamigosecreto.github.io/blob/main/assets/inicio.png?raw=true)
 
-Al añadir el nombre, este debe ser válido:
-.No tiene que estar en blanco
+Al añadir el nombre, este debe ser válido, es decir no tiene que estar en blanco
 ![Validez nombre blanco](https://github.com/anaelisab/challengeamigosecreto.github.io/blob/main/assets/alertaBlanco.png?raw=true)
 
-.No estar repetido
+ni estar repetido
 ![Validez nombre repetido](https://github.com/anaelisab/challengeamigosecreto.github.io/blob/main/assets/alertaRepetido.png?raw=true)
 
 Tienes que añadir mínimo tres nombres para poder jugar
