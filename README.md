@@ -19,6 +19,8 @@ Tan solo tenes que ingresar los nombres de los participantes ¡y listo, ya está
 Inicio 
 ![Pantalla inicial](https://github.com/anaelisab/challengeamigosecreto.github.io/blob/main/assets/inicio.png?raw=true)
 
+## 2.1 Armado de lista
+
 Al añadir el nombre, éste debe ser válido.
 
 Es decir no tiene que estar en blanco
@@ -46,6 +48,8 @@ Podras ver todos los nombres que has ingresado en una lista vertical:
 Podrías eliminarlos en caso de haber algún error
 
 ![Eliminar amigos](https://github.com/anaelisab/challengeamigosecreto.github.io/blob/main/assets/eliminarNombr.png?raw=true)
+
+## 2.2 Sorteo en curso
 
 Una vez todos los nombres del grupo estén en la lista, cada uno podrá tomar el dispositivo y averiguar su amigo secreto que será asignado de manera aleatoria.
 
