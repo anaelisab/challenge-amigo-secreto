@@ -1,20 +1,19 @@
 // El principal objetivo de este desafío es fortalecer tus habilidades en lógica de programación. Aquí deberás desarrollar la lógica para resolver el problema.
-// CHALLENGE AMIGO SECRETO
 
-// ***** VARIABLES *****
+// Variables
 let listaAmigos = [];
 let amigosSorteados = [];
 let juegoIniciado = false;
 
-// ***** FUNCIONES *****
+// Funciones
 
-// Limpiar caja
-function limpiarCaja() {
+// Limpiar
+function vaciarCaja() {
   document.getElementById("amigo").value = "";
 }
 
-// Validar nombre
-function nombreValido(nombre) {
+// Validación
+function validarNombre(nombre) {
   return /^[a-zA-Z0-9\s]+$/.test(nombre);
 }
 
@@ -23,16 +22,16 @@ function agregarAmigo() {
   let nombreIngresado = document.getElementById("amigo").value.trim();
 
   if (nombreIngresado === "") {
-    alert("Debe ingresar un nombre, por favor, inténtelo nuevamente");
-  } else if (!nombreValido(nombreIngresado)) {
+    alert("Tenes que ingresar un nombre");
+  } else if (!validarNombre(nombreIngresado)) {
     alert("El nombre solo puede contener letras, números y espacios.");
   } else if (listaAmigos.includes(nombreIngresado)) {
     alert(
-      `¡${nombreIngresado} ya existe!, debes ingresar nombres distintos, intenta agregando la primera letra del apellido de tu amigo/a.`
+      `¡${nombreIngresado} ya existe! Intenta agregando la primera letra del apellido o un número.`
     );
   } else {
     listaAmigos.push(nombreIngresado);
-    limpiarCaja();
+    vaciarCaja();
 
     const listaImprimir = document.getElementById("listaAmigos");
     const li = document.createElement("li");
@@ -58,13 +57,13 @@ function agregarAmigo() {
 function sortearAmigo() {
   if (listaAmigos.length < 3) {
     alert(
-      "No se puede iniciar el sorteo. Necesitas al menos 3 amigos para comenzar. Por favor, agrega más nombres a la lista."
+      "Necesitas al menos 3 amigos para comenzar el sorteo. Por favor, agrega más nombres a la lista."
     );
     return;
   }
 
   if (!juegoIniciado) {
-    iniciarJuego();
+    iniciarSorteo();
   }
 
   const amigosNoSorteados = listaAmigos.filter(
@@ -72,7 +71,7 @@ function sortearAmigo() {
   );
 
   if (amigosNoSorteados.length === 0) {
-    finalizarJuego();
+    finalizarSorteo();
     return;
   }
 
@@ -87,13 +86,13 @@ function sortearAmigo() {
     "¡Haz clic en el nombre sorteado antes de pasárselo a la siguiente persona!"
   );
 
-  // Ocultar nombre al hacer clic en el resultado
+  // Esconder nombre al hacer click en el resultado
   resultado.addEventListener("click", () => {
     resultado.textContent = "";
   });
 }
 
-function iniciarJuego() {
+function iniciarSorteo() {
   juegoIniciado = true;
   document.getElementById("agregarBtn").setAttribute("disabled", true);
   document.getElementById("amigo").setAttribute("disabled", true);
@@ -102,14 +101,14 @@ function iniciarJuego() {
   document.querySelector("h2").textContent = "¡Sorteo en progreso!";
 }
 
-function finalizarJuego() {
+function finalizarSorteo() {
   alert(
     'Ya han sido sorteados todos tus amigos/as, ahora cada uno/a tiene su "Amigo Secreto".'
   );
-  setTimeout(reiniciarJuego, 0);
+  setTimeout(reiniciarSorteo, 0);
 }
 
-function reiniciarJuego() {
+function reiniciarSorteo() {
   listaAmigos = [];
   amigosSorteados = [];
   juegoIniciado = false;
@@ -117,7 +116,7 @@ function reiniciarJuego() {
   document.getElementById("amigo").removeAttribute("disabled");
   document.getElementById("listaAmigos").style.display = "block";
   document.getElementById("listaAmigos").innerHTML = "";
-  document.querySelector("h2").textContent = "Digite el nombre de sus amigos";
+  document.querySelector("h2").textContent = "Escribí el nombre de tus amigos";
   document.getElementById("resultado").textContent = "";
   document.querySelector(".input-wrapper").style.display = "flex"; // Mostrar la barra de entrada
   actualizarEstadoJuego();
@@ -125,10 +124,10 @@ function reiniciarJuego() {
 
 function actualizarEstadoJuego() {
   const sortearBtn = document.getElementById("sortearBtn");
-  sortearBtn.disabled = false; // Siempre habilitamos el botón
+  sortearBtn.disabled = false;
 }
 
-// Evento para agregar amigo al presionar Enter
+// Agregar amigo al presionar Enter
 document.getElementById("amigo").addEventListener("keypress", function (event) {
   if (event.key === "Enter") {
     event.preventDefault();
