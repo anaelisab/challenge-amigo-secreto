@@ -19,7 +19,9 @@ Tan solo tenes que ingresar los nombres de los participantes y ya está*<br>
 Inicio
 ![Pantalla inicial](https://github.com/anaelisab/challengeamigosecreto.github.io/blob/main/assets/inicio.png?raw=true)
 
-Al añadir el nombre, este debe ser válido, es decir no tiene que estar en blanco
+Al añadir el nombre, éste debe ser válido.
+
+Es decir no tiene que estar en blanco
 ![Validez nombre blanco](https://github.com/anaelisab/challengeamigosecreto.github.io/blob/main/assets/alertaBlanco.png?raw=true)
 
 ni estar repetido
