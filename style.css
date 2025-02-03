@@ -21,6 +21,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Inter", sans-serif;
 }
 
 .main-content {
@@ -28,15 +29,23 @@ body {
   flex-direction: column;
   height: 100%;
   width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 /* Banner */
 .header-banner {
   flex: 40%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 40px 0 0;
+  padding: 40px 0;
+}
+
+.header-banner img {
+  max-width: 200px;
+  margin-top: 20px;
 }
 
 /* Sección de entrada */
@@ -44,12 +53,13 @@ body {
   flex: 60%;
   background-color: var(--color-secondary);
   border: 1px solid #000;
-  border-radius: 64px 64px 0 0;
+  border-radius: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  padding: 30px;
   width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Títulos */
@@ -59,14 +69,15 @@ body {
   font-weight: 900;
   font-style: italic;
   color: var(--color-white);
+  text-align: center;
 }
 
 .section-title {
   font-family: "Inter", serif;
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 700;
   color: var(--color-primary);
-  margin: 10px 0;
+  margin: 20px 0;
   text-align: center;
 }
 
@@ -75,73 +86,70 @@ body {
   display: flex;
   justify-content: center;
   width: 100%;
-  max-width: 600px;
-  margin-top: 20px;
+  max-width: 500px;
+  margin-bottom: 20px;
 }
 
 .input-name {
-  width: 100%;
-  padding: 10px;
-  border: 2px solid #000;
+  flex-grow: 1;
+  padding: 12px 15px;
+  border: 2px solid var(--color-primary);
   border-radius: 25px 0 0 25px;
   font-size: 16px;
+  outline: none;
 }
 
 .button-container {
-  width: 300px;
-  justify-content: center;
+  width: 100%;
+  max-width: 300px;
   margin-top: 20px;
-}
-
-/* Estilos de entrada de texto */
-.input-title {
-  flex: 1;
-  padding: 10px 15px;
-  font-size: 16px;
-  border: 2px solid #333;
-  border-right: none;
-  border-radius: 25px 0 0 25px;
-  font-family: "Merriweather", serif;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* Estilos de botón */
 button {
-  padding: 15px 30px;
+  padding: 12px 20px;
   font-family: "Inter", sans-serif;
   font-size: 16px;
-  border: 2px solid #000;
+  font-weight: 600;
+  border: none;
   border-radius: 25px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s;
+}
+
+button:active {
+  transform: scale(0.98);
 }
 
 .button-add {
-  background-color: var(--color-tertiary);
-  color: var(--color-text);
+  background-color: var(--color-primary);
+  color: var(--color-white);
   border-radius: 0 25px 25px 0;
 }
 
 .button-add:hover {
-  background-color: #a1a1a1;
+  background-color: #3a56e0;
 }
 
 /* Listas */
 .name-list {
   list-style-type: none;
   color: var(--color-text);
-  font-family: "Inter", sans-serif;
   font-size: 18px;
-  margin: 20px 0;
   width: 100%;
-  max-width: 600px;
+  max-width: 500px;
+  margin-bottom: 20px;
 }
 
 .name-list li {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: var(--color-white);
   margin-bottom: 10px;
+  padding: 10px 15px;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .name-list button {
@@ -155,8 +163,8 @@ button {
   justify-content: center;
   align-items: center;
   font-size: 14px;
-  margin-left: 10px;
   padding: 0;
+  margin-left: 10px;
 }
 
 .name-list button:hover {
@@ -164,7 +172,7 @@ button {
 }
 
 .result-list {
-  margin-top: 15px;
+  margin-top: 20px;
   color: #05df05;
   font-size: 22px;
   font-weight: bold;
@@ -175,15 +183,20 @@ button {
 .button-draw {
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 100%;
-  padding: 10px 40px;
+  padding: 15px 30px;
   color: var(--color-white);
   background-color: var(--color-button);
-  font-size: 16px;
+  font-size: 18px;
+  border-radius: 25px;
+  transition: background-color 0.3s;
 }
 
 .button-draw img {
-  margin-right: 40px;
+  margin-right: 10px;
+  width: 24px;
+  height: 24px;
 }
 
 .button-draw:hover {
@@ -197,4 +210,25 @@ button {
   align-items: center;
   justify-content: center;
   margin-top: 20px;
+  background-color: var(--color-white);
+  border-radius: 15px;
+  padding: 10px;
+  width: 100%;
+  max-width: 500px;
+}
+
+@media (max-width: 600px) {
+  .main-title {
+    font-size: 36px;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .input-wrapper,
+  .name-list,
+  .result-container {
+    max-width: 100%;
+  }
 }
