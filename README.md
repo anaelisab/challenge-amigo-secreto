@@ -11,7 +11,7 @@ Desafío Programa ONE
 ## 1. Descripción del proyecto
 
 Hice una aplicación para facilitar el sorteo del "Amigo Invisible" o "Secret Santa".<br>
-Tan solo tenes que ingresar los nombres de los participantes y ya está*<br>
+Tan solo tenes que ingresar los nombres de los participantes y listo, ya está listo para usar<br>
 
 
 ## 2. ¿Cómo funciona?
@@ -23,7 +23,8 @@ Al añadir el nombre, éste debe ser válido.
 
 Es decir no tiene que estar en blanco
 ![Validez nombre blanco](https://github.com/anaelisab/challengeamigosecreto.github.io/blob/main/assets/alertaBlanco.png?raw=true)
-
+ni contener caracteres especiales
+![Validez nombre caracteres especiales](https://github.com/anaelisab/challengeamigosecreto.github.io/blob/main/assets/alertaNombreValido.png?raw=true)
 ni estar repetido
 ![Validez nombre repetido](https://github.com/anaelisab/challengeamigosecreto.github.io/blob/main/assets/alertaRepetido.png?raw=true)
 
