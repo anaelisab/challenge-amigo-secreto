@@ -52,9 +52,7 @@ Luego reiniciará automáticamente.
 
 ## Acceso al proyecto
 
-Para utilizar la aplicación, solo es necesario ingresar a este link.
-
-![Open file](challengeamigosecreto.github.io/)
+https://anaelisab.github.io/challengeamigosecreto.github.io/
 
 
 
