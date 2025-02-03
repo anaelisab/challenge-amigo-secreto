@@ -54,7 +54,7 @@ Luego reiniciará automáticamente.
 
 Para utilizar la aplicación, solo es necesario ingresar a este link.
 
-![Open file](https://anaelisab.github.io/challengeamigosecreto.github.io/)
+![Open file](challengeamigosecreto.github.io/)
 
 
 
