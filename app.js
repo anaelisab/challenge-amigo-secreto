@@ -57,7 +57,7 @@ function agregarAmigo() {
 function sortearAmigo() {
   if (listaAmigos.length < 3) {
     alert(
-      "Necesitas al menos 3 amigos para comenzar el sorteo. Por favor, agrega más nombres a la lista."
+      "Necesitas al menos 3 nombres para comenzar el sorteo. Por favor, agrega más a la lista."
     );
     return;
   }

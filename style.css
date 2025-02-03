@@ -1,5 +1,5 @@
 :root {
-  --color-primary: #4b69fd;
+  --color-primary: #894bfd;
   --color-secondary: #fff9eb;
   --color-tertiary: #c4c4c4;
   --color-button: #fe652b;
@@ -128,7 +128,7 @@ button:active {
 }
 
 .button-add:hover {
-  background-color: #3a56e0;
+  background-color: #712af5;
 }
 
 /* Listas */
@@ -153,7 +153,7 @@ button:active {
 }
 
 .name-list button {
-  background-color: #ff4d4d;
+  background-color: #ffa04d;
   color: white;
   border: none;
   border-radius: 50%;
@@ -168,12 +168,12 @@ button:active {
 }
 
 .name-list button:hover {
-  background-color: #ff3333;
+  background-color: #ff7433;
 }
 
 .result-list {
   margin-top: 20px;
-  color: #05df05;
+  color: #e1bd1b;
   font-size: 22px;
   font-weight: bold;
   text-align: center;
